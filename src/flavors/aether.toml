@@ -1,0 +1,49 @@
+[meta]
+version = "0.1.0"
+name = "Caelora Aether"
+identifier = "caelora-aether"
+order = 0
+dark = false
+
+# ----------------
+#  Brand Core
+# ----------------
+
+[colors.blue]
+name = "Celestial Blue"
+accent = true
+oklch = { light = 0.78, chroma = 0.16, hue = 237 }
+
+[colors.violet]
+name = "Aurora Violet"
+accent = true
+oklch = { light = 0.76, chroma = 0.18, hue = 295 }
+
+[colors.coral]
+name = "Dawn Coral"
+accent = true
+oklch = { light = 0.78, chroma = 0.15, hue = 58 }
+
+# ----------------
+#  Semantic Colors
+# ----------------
+
+[colors.dust]
+name = "Star Dust Gray"
+accent = false
+oklch = { light = 0.56, chroma = 0.02, hue = 255 }
+
+[colors.tidal]
+name = "Tidal Bloom"
+accent = false
+oklch = { light = 0.72, chroma = 0.09, hue = 180 }
+
+[colors.amber]
+name = "Dawn Amber"
+accent = false
+oklch = { light = 0.79, chroma = 0.13, hue = 58 }
+
+[colors.fault]
+name = "Fault Flare"
+accent = false
+oklch = { light = 0.69, chroma = 0.17, hue = 25 }
