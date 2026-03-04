@@ -1,0 +1,153 @@
+# I could not find the common schema for TOML file
+# Therefore, I create this file to specify
+# the meaning of each fields in flavors
+
+[meta]
+version = "0.0.0" # The version of the flavor
+name = "Flavor Name"
+identifier = "flavorID"
+order = 0 # The order of the flavor in the palette
+dark = false # Whether the flavor is for dark theme or not.
+
+[colors.colorID]
+name = "Your Color Name"
+accent = false # Whether the flavor is for accent color or not.
+oklch = {light = 0.5, chroma = 0.5, hue = 0}
+# In this palette, we choose OKLCH as the color space.
+# We'll transpile the color to CSS variables.
+
+# ---------------
+#   Variants of Specific Color
+# ---------------
+
+[colors.colorID.shades.50]
+accent = false
+oklch = {light = 0.5, chroma = 0.5, hue = 0}
+
+[colors.colorID.shades.100]
+accent = false
+oklch = {light = 0.5, chroma = 0.5, hue = 0}
+
+[colors.colorID.shades.200]
+accent = false
+oklch = {light = 0.6, chroma = 0.5, hue = 0}
+
+[colors.colorID.shades.300]
+accent = false
+oklch = {light = 0.7, chroma = 0.5, hue = 0}
+
+[colors.colorID.shades.400]
+accent = false
+oklch = {light = 0.8, chroma = 0.5, hue = 0}
+
+[colors.colorID.shades.500]
+accent = false
+oklch = {light = 0.9, chroma = 0.5, hue = 0}
+
+[colors.colorID.shades.600]
+accent = false
+oklch = {light = 1.0, chroma = 0.5, hue = 0}
+
+[colors.colorID.shades.700]
+accent = false
+oklch = {light = 0.9, chroma = 0.6, hue = 0}
+
+[colors.colorID.shades.800]
+accent = false
+oklch = {light = 0.8, chroma = 0.7, hue = 0}
+
+[colors.colorID.shades.900]
+accent = false
+oklch = {light = 0.7, chroma = 0.8, hue = 0}
+
+[colors.colorID.shades.950]
+accent = false
+oklch = {light = 0.5, chroma = 0.5, hue = 0}
+
+# ---------------
+#   Ansi Colors
+# ---------------
+
+# --- Normal Colors: 0-7 ---
+
+[colors.colorID.ansi.0]
+name = "Black"
+description = "Terminal background or the deepest base level for high-contrast UI components."
+oklch = { light = 0.05, chroma = 0.05, hue = 0 }
+
+[colors.colorID.ansi.1]
+name = "Red"
+description = "Critical errors, system interruptions, or deletions in version control systems."
+oklch = { light = 0.1, chroma = 0.1, hue = 0 }
+
+[colors.colorID.ansi.2]
+name = "Green"
+description = "Successful operations, healthy status indicators, or additions in version control."
+oklch = { light = 0.65, chroma = 0.15, hue = 145 }
+
+[colors.colorID.ansi.3]
+name = "Yellow"
+description = "System warnings, class attributes, or constants that require developer attention."
+oklch = { light = 0.75, chroma = 0.12, hue = 85 }
+
+[colors.colorID.ansi.4]
+name = "Blue"
+description = "Primary directory paths, core language keywords, or main library identifiers."
+oklch = { light = 0.6, chroma = 0.14, hue = 250 }
+
+[colors.colorID.ansi.5]
+name = "Magenta"
+description = "Built-in shell commands, type definitions, or specialized syntax markers."
+oklch = { light = 0.62, chroma = 0.18, hue = 310 }
+
+[colors.colorID.ansi.6]
+name = "Cyan"
+description = "Hyperlinks, regular expression tokens, or interactive shell prompts."
+oklch = { light = 0.68, chroma = 0.1, hue = 190 }
+
+[colors.colorID.ansi.7]
+name = "White"
+description = "Standard terminal foreground text providing neutral readability across various backgrounds."
+oklch = { light = 0.85, chroma = 0.02, hue = 250 }
+
+# --- Bright Colors: 8-15 ---
+
+[colors.colorID.ansi.8]
+name = "Bright Black"
+description = "Secondary text for code comments, inactive UI components, or subtle borders."
+oklch = { light = 0.45, chroma = 0.02, hue = 250 }
+
+[colors.colorID.ansi.9]
+name = "Bright Red"
+description = "High-priority alerts, aggressive warning messages, or emphasized error states."
+oklch = { light = 0.55, chroma = 0.22, hue = 25 }
+
+[colors.colorID.ansi.10]
+name = "Bright Green"
+description = "Highlighted success messages, string literals, or active process indicators."
+oklch = { light = 0.72, chroma = 0.18, hue = 150 }
+
+[colors.colorID.ansi.11]
+name = "Bright Yellow"
+description = "Highlighted keywords, specialized tags, or interactive selection menus."
+oklch = { light = 0.82, chroma = 0.15, hue = 90 }
+
+[colors.colorID.ansi.12]
+name = "Bright Blue"
+description = "Focus variable names, active hyperlinks, or primary action highlights."
+oklch = { light = 0.65, chroma = 0.16, hue = 255 }
+
+[colors.colorID.ansi.13]
+name = "Bright Magenta"
+description = "Decorative tokens, specialized syntax decorators, or unique brand accents."
+oklch = { light = 0.7, chroma = 0.2, hue = 320 }
+
+[colors.colorID.ansi.14]
+name = "Bright Cyan"
+description = "Advanced escape characters, CLI parameter flags, or technical diagnostic data."
+oklch = { light = 0.75, chroma = 0.12, hue = 195 }
+
+[colors.colorID.ansi.15]
+name = "Bright White"
+description = "High-contrast bold text, current command highlights, or active tab indicators."
+oklch = { light = 0.95, chroma = 0.01, hue = 250 }

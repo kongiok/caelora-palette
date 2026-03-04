@@ -1,3 +1,5 @@
-import aetherFlavor from "./flavors/aether.toml" with { type: "toml" };
-
-export const aether = aetherFlavor;
+import Bun from "bun";
+await Bun.build({
+  entrypoints: ["src/index.ts"],
+  outdir: "dist",
+});

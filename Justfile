@@ -7,7 +7,7 @@ install:
     bun install
 
 build:
-    bun run src/build.ts
+    bun run src/index.ts
 
 test:
     bun test

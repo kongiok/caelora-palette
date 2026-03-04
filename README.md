@@ -22,16 +22,18 @@ Palettes of the planet that I imagined.
 ## Structure
 
 ```structure
-/ -> configs, where the journey begins
-/src/flavors/ -> all the base colour would be defined here
-/src/core/ -> colours transformation algorithms
-/src/utils/ -> utility functions for color manipulation
-/src/index.ts -> entry point of the application
-/src/cli.ts -> command line interface for interacting with the palette
-/dist/-> compiled output of the palette
-/dist/css -> compiled css output of the palette
-/dist/toml -> compiled toml output of the palette
-/dist/esm -> compiled esm output of the palette (with types)
+ ├/               --> project root, where the journey begins
+ ├──Justfile      --> development flow
+ ├──README.md
+ ├──src           --> features
+ │  ├──core       --> Logic & Schema
+ │  ├──utils      --> utilities
+ │  ├──exports  --> export colours in multiple ways
+ │  ├──flavors    --> single source of truth
+ │  │  ├──aether.toml       --> flavor starts with flavor name
+ │  │  └──flavor.spec.toml  --> spec TOML file
+ │  └──index.ts   --> bundler entries
+ └──LICENSE
 ```
 
 ## Architecture
