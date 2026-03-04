@@ -16,7 +16,7 @@ Palettes of the planet that I imagined.
 - **TypeScript**: A strongly typed programming language that ensures color logic accuracy.
 - **TOML**: A human-readable configuration format used for defining structured color data.
 - **colord**: A library for color manipulation and conversion.
-- **zod**: A schema validation library.
+- **Valibot**: A schema validation library.
 - **remeda**: A utility library for functional programming.
 
 ## Structure
